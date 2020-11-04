@@ -1,0 +1,5 @@
+2020-11-03 19:56:36 INFO  Driver:39 - PROGRAM START
+2020-11-03 19:56:36 WARN  Driver:45 - WARNING: Division by zero occured!
+java.lang.ArithmeticException: / by zero
+	at com.revature.Driver.main(Driver.java:42)
+2020-11-03 19:56:36 INFO  Driver:48 - PROGRAM END
