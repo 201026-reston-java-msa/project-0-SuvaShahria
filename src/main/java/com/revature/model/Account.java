@@ -156,8 +156,9 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account [accountId=" + accountId + ", userId=" + userId + ", user=" + user + ", balance=" + balance
-				+ ", status=" + status + ", type=" + type + ", statusId=" + statusId + ", typeId=" + typeId + "]";
+		String s = "--------------------------------------------\n"+ "Account_ID	User_ID	Balance	Status\n"+"--------------------------------------------\n"+accountId+
+				"		"+ userId+ "	"+balance+ "	"+status.getStatus();
+		return s;
 	} 
 	
 	

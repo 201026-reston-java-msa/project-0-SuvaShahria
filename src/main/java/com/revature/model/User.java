@@ -110,10 +110,13 @@ public class User {
 	public void setRole(Role role) {
 		this.role = role;
 	}
+
+
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", username=" + username + ", password=" + password + ", firstName="
-				+ firstName + ", lastName=" + lastName + ", email=" + email + ", role=" + role + "]";
+		return "-------------------------------------------------------\n"+"[userId= " + userId + ", username= " + username + ", firstName= " + firstName + ", lastName= "
+				+ lastName + ", email= " + email + "]";
 	}
+	
 
 }
