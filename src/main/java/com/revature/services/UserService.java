@@ -3,14 +3,16 @@ package com.revature.services;
 import java.util.List;
 
 import com.revature.dao.*;
+import com.revature.dao.impl.RoleDaoImpl;
+import com.revature.dao.impl.UserDaoImpl;
 import com.revature.model.*;
 
 
 public class UserService {
 	
 
-	private static final RoleDao rdao = RoleDao.getInstance();
-	private static final UserDao udao = UserDao.getInstance();
+	private static final RoleDao rdao = RoleDaoImpl.getInstance();
+	private static final UserDao udao = UserDaoImpl.getInstance();
 	
 	public User login(String username, String password) {
 		

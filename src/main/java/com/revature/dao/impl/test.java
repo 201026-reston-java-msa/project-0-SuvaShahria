@@ -1,6 +1,7 @@
-package com.revature.dao;
+package com.revature.dao.impl;
 import java.security.NoSuchAlgorithmException;
 import com.revature.model.*;
+import com.revature.dao.UserDao;
 import com.revature.dao.util.mySqlConnector;
 public class test {
 
@@ -15,7 +16,7 @@ public class test {
 		User a = new User("a2", "a2", "a2", "a2", "a2@gmail.com", r);
 		User e = new User("e", "e", "e", "e", "e@gmail.com", r2);
 		User c = new User("c", "c", "c", "c", "c@gmail.com", r3);
-		UserDao ud = new UserDao(1);
+		UserDao ud = new UserDaoImpl(1);
 		User u2 = ud.insert(a);
 		//ud.insert(e);
 		//ud.insert(c);

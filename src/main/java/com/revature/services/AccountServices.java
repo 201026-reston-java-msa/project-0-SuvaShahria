@@ -3,15 +3,20 @@ package com.revature.services;
 import java.util.List;
 
 import com.revature.dao.*;
+import com.revature.dao.impl.AccountDaoImpl;
+import com.revature.dao.impl.AccountStatusDaoImpl;
+import com.revature.dao.impl.AccountTypeDaoImpl;
+import com.revature.dao.impl.RoleDaoImpl;
+import com.revature.dao.impl.UserDaoImpl;
 import com.revature.model.*;
 
 public class AccountServices {
 
-	private static final RoleDao rdao = RoleDao.getInstance();
-	private static final UserDao udao = UserDao.getInstance();
-	private static final AccountDao acdao = AccountDao.getInstance();
-	private static final AccountStatusDao asdao = AccountStatusDao.getInstance();
-	private static final AccountTypeDao atdao = AccountTypeDao.getInstance();
+	private static final RoleDao rdao = RoleDaoImpl.getInstance();
+	private static final UserDao udao = UserDaoImpl.getInstance();
+	private static final AccountDao acdao = AccountDaoImpl.getInstance();
+	private static final AccountStatusDao asdao = AccountStatusDaoImpl.getInstance();
+	private static final AccountTypeDao atdao = AccountTypeDaoImpl.getInstance();
 	
 	public Account insertAccount(Account ac) {
 		

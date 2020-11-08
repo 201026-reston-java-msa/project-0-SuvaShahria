@@ -1,7 +1,7 @@
 package com.revature.controller;
 
 import java.util.Scanner;
-
+import java.util.List;
 import com.revature.model.*;
 import com.revature.services.UserService;
 
@@ -62,6 +62,13 @@ public class UserController {
 		User user = userService.findById(id);
 		return user;
 		
+	}
+
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		List<User> UL = null;
+		 UL =userService.findAllUsers();
+		 return UL;
 	}
 
 }

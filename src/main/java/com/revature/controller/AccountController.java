@@ -1,13 +1,18 @@
 package com.revature.controller;
 
+import java.util.List;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
+import com.revature.Driver;
 import com.revature.model.Account;
 import com.revature.services.AccountServices;
 import com.revature.services.UserService;
 
 public class AccountController {
 	private static final AccountServices as = new AccountServices();
+	private static final Logger logac = Logger.getLogger(AccountController.class);
 
 	public Account insertAccount(int userid) {
 		// TODO Auto-generated method stub
@@ -18,6 +23,7 @@ public class AccountController {
 		ac.setTypeId(1);
 		ac.setStatusId(1);
 		try {
+			
 			Account ac2 = as.insertAccount(ac);
 			return ac2;
 		}catch(Exception e) {
@@ -28,6 +34,7 @@ public class AccountController {
 	}
 
 	public Account deposit(int userID,int roleId) {
+		
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter the account ID");
@@ -207,6 +214,13 @@ public class AccountController {
 		}
 		ac.setStatusId(3);
 		Account ac2 = as.updateAccount(ac,1);
+	}
+
+	public List<Account> findAll() {
+		// TODO Auto-generated method stub
+		List<Account> accounts = null;
+		accounts = as.findAll();
+		return accounts;
 	}
 
 }

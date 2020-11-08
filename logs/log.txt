@@ -3,3 +3,38 @@
 java.lang.ArithmeticException: / by zero
 	at com.revature.Driver.main(Driver.java:42)
 2020-11-03 19:56:36 INFO  Driver:48 - PROGRAM END
+2020-11-06 18:10:15 INFO  Driver:22 - Program Start
+2020-11-06 18:10:22 INFO  Driver:82 - User logged in
+2020-11-06 18:42:42 INFO  Driver:22 - Program Start
+2020-11-06 18:42:48 INFO  Driver:82 - User logged in
+2020-11-06 18:42:49 INFO  Driver:236 - Account created
+2020-11-06 18:52:54 INFO  Driver:22 - Program Start
+2020-11-06 18:52:59 INFO  Driver:82 - User logged in
+2020-11-06 18:53:04 INFO  Driver:235 - Account created
+2020-11-06 19:30:09 INFO  Driver:22 - Program Start
+2020-11-06 19:30:11 INFO  Driver:82 - User logged in
+2020-11-06 19:30:12 INFO  AccountDaoImpl:57 - Account inserted
+2020-11-06 19:30:12 INFO  Driver:235 - Account created
+2020-11-06 20:00:36 INFO  Driver:22 - Program Start
+2020-11-06 20:00:40 INFO  UserDaoImpl:51 - Logged in
+2020-11-06 20:00:40 INFO  Driver:82 - User logged in
+2020-11-06 20:00:44 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:00:50 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-06 20:00:50 INFO  Driver:103 - Deposit Success
+2020-11-06 20:01:18 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:01:20 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-06 20:01:20 INFO  Driver:115 - Withdraw Success
+2020-11-06 20:01:37 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:01:37 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:01:45 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-06 20:01:45 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-06 20:01:45 INFO  Driver:127 - Transfer Error
+2020-11-06 20:02:15 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:02:20 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:02:20 INFO  AccountDaoImpl:172 - Account updated
+2020-11-06 20:02:31 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:02:31 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:02:31 INFO  AccountDaoImpl:172 - Account updated
+2020-11-06 20:02:50 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:02:52 INFO  AccountDaoImpl:134 - Account found
+2020-11-06 20:02:52 INFO  AccountDaoImpl:172 - Account updated
