@@ -143,7 +143,7 @@ public class UserDaoImpl implements UserDao {
 			
 			
 		}catch(SQLException e) {
-			System.out.println(e);			
+			loguc.error("User not inserted");			
 		}
 		loguc.error("User not inserted");
 		return null;

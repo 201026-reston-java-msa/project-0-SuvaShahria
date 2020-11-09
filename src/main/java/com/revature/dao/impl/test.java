@@ -10,14 +10,14 @@ public class test {
 //		System.out.print("hi");
 //	Role r1 = r.findRoleById(2);
 //	System.out.println(r1.getRole());
-		Role r = new Role(1,"admin");
-		Role r2 = new Role(2,"employee");
-		Role r3 = new Role(3,"customer");
-		User a = new User("a2", "a2", "a2", "a2", "a2@gmail.com", r);
-		User e = new User("e", "e", "e", "e", "e@gmail.com", r2);
-		User c = new User("c", "c", "c", "c", "c@gmail.com", r3);
-		UserDao ud = new UserDaoImpl(1);
-		User u2 = ud.insert(a);
+//		Role r = new Role(1,"admin");
+//		Role r2 = new Role(2,"employee");
+//		Role r3 = new Role(3,"customer");
+//		User a = new User("a2", "a2", "a2", "a2", "a2@gmail.com", r);
+//		User e = new User("e", "e", "e", "e", "e@gmail.com", r2);
+//		User c = new User("c", "c", "c", "c", "c@gmail.com", r3);
+//		UserDao ud = new UserDaoImpl(1);
+//		User u2 = ud.insert(a);
 		//ud.insert(e);
 		//ud.insert(c);
 		//User up = new User("s5", "s", "s", "s", "ss@gmail.com", r);
@@ -44,6 +44,10 @@ public class test {
 //		ac.setAccountId(4);
 //		ad.delete(ac);
 		//ad.updateStatus(ac);
+	}
+	
+	public int t() {
+		return 1;
 	}
 
 }
