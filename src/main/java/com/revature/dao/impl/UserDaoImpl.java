@@ -1,6 +1,7 @@
 package com.revature.dao.impl;
 
 import com.revature.model.*;
+import com.revature.dao.util.Hashing;
 import com.revature.dao.RoleDao;
 import com.revature.dao.UserDao;
 import com.revature.dao.util.mySqlConnector;
@@ -35,7 +36,12 @@ public class UserDaoImpl implements UserDao {
 	public User login(String username, String password)  {	
 		//System.out.println("Attempting to login");
 		
-		
+		try {
+			password = Hashing.getHash(password);
+		} catch (NoSuchAlgorithmException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 		try(Connection connector = mySqlConnector.getConnection()){			
 			String sql = "SELECT * FROM users WHERE username = ? AND pass_word = ?;";
@@ -107,7 +113,12 @@ public class UserDaoImpl implements UserDao {
 	
 	@Override
 	public User insert(User user) {
-
+		try {
+			user.setPassword(Hashing.getHash(user.getPassword()));
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
 		
 		
 		try(Connection connector = mySqlConnector.getConnection()){
@@ -150,7 +161,12 @@ public class UserDaoImpl implements UserDao {
 	}
 	@Override
 	public boolean update(User user) {
-		
+		try {
+			user.setPassword(Hashing.getHash(user.getPassword()));
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
 		
 		
 		try(Connection c = mySqlConnector.getConnection()){			

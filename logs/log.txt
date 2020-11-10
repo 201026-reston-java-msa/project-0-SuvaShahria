@@ -494,3 +494,15 @@ java.lang.ArithmeticException: / by zero
 2020-11-09 19:18:07 INFO  Driver:189 - Accounts found
 2020-11-09 19:18:17 INFO  AccountDaoImpl:134 - Account found
 2020-11-09 19:18:17 INFO  Driver:211 - Account found
+2020-11-10 17:38:48 INFO  UserDaoImpl:147 - User inserted
+2020-11-10 17:38:49 INFO  UserDaoImpl:147 - User inserted
+2020-11-10 17:38:49 INFO  UserDaoImpl:147 - User inserted
+2020-11-10 17:40:09 INFO  Driver:22 - Program Start
+2020-11-10 17:40:18 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 17:40:18 INFO  Driver:82 - User logged in
+2020-11-10 18:13:44 INFO  Driver:22 - Program Start
+2020-11-10 18:13:47 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:13:47 INFO  Driver:82 - User logged in
+2020-11-10 18:13:50 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:13:50 INFO  AccountDaoImpl:57 - Account inserted
+2020-11-10 18:13:50 INFO  Driver:236 - Account created
