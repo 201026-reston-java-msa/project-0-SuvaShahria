@@ -64,7 +64,7 @@ public class AccountDaoImpl implements AccountDao {
 			return account;
 
 		}catch(SQLException e) {
-			System.out.println(e);
+			//System.out.println(e);
 		}
 		return null;
 	

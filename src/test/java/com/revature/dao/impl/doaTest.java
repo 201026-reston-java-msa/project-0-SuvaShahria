@@ -25,6 +25,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.mockito.Mockito;
 
+import com.revature.controller.AccountController;
 import com.revature.dao.*;
 import com.revature.model.*;
 import org.junit.runners.MethodSorters;
@@ -43,9 +44,15 @@ public class doaTest {
 	
 	private static final AccountDaoImpl acd =  new AccountDaoImpl(1);
 	private static final UserDaoImpl usd = new UserDaoImpl(1);
+	private static final AccountController acc = new AccountController();
+	private static final AccountStatusDao asdao = AccountStatusDaoImpl.getInstance();
+	private static final AccountTypeDao atdao = AccountTypeDaoImpl.getInstance();
 	static User user = new User();
-	User user2= new User();
-	int id;
+	static  User user2= new User();
+	static int id;
+	static Account ac = new Account();
+	static Account ac2 = new Account();
+	static Account ac3 = new Account();
 	
 	@BeforeClass
 	public static void init() {
@@ -59,6 +66,8 @@ public class doaTest {
 		user.setRoleID(3);
 		Role r = new Role(3,"customer");
 		user.setRole(r);
+		
+		
 	}
 	@Test
 	
@@ -102,13 +111,101 @@ public class doaTest {
 	
 	@Test
 	public void c_loginTest() {
-		assert(true);
+		User u = usd.login("t", "t");
+		if(u==null) {
+			assert(false);
+		}else {
+			assert(true);
+		}
 	}
+	
+	@Test
+	public void c_loginFailTest() {
+		User u = usd.login("t", "t2");
+		if(u==null) {
+			assert(true);
+		}else {
+			assert(false);
+		}
+	}
+	
+	@Test
+	public void d_loginFailTest() {
+		User u = usd.login("t2", "t2");
+		if(u==null) {
+			assert(true);
+		}else {
+			assert(false);
+		}
+	}
+
+	
+	@Test
+	public void e_insertAcc() {
+		ac= acc.insertAccount(1);
+		if(ac!=null) {
+			assert(true);
+		}else {
+			assert(false);
+		}
+		
+	}
+	
+	@Test
+	public void f_insertAcc() {
+		ac2= acc.insertAccount(1);
+		if(ac2!=null) {
+			assert(true);
+		}else {
+			assert(false);
+		}
+		
+	}
+	
+	@Test
+	public void g_deposit() {
+		ac.setBalance(100);
+		 acd.updateBalance(ac);
+		 Account tmp = acd.findById(ac.getAccountId());
+		 if(ac.getBalance() ==100) {
+			 assert(true);
+		 }else {
+			 assert(false);
+		 }
+	}
+	
+	@Test
+	public void h_insertAcc() {
+		ac3 = null;
+		ac3= acc.insertAccount(5);
+		
+		if(ac3!=null) {
+			assert(false);
+		}else {
+			assert(true);
+		}
+		
+	}
+	
+	@Test
+	public void i_update() {
+		ac2.setStatusId(2);
+		Account tmp =acd.update(ac2, 1);
+		
+		if(tmp.getStatus().getStatusId() ==2) {
+			assert(true);
+		}else {
+			assert(false);
+		}
+	}
+	
+	
 	
 	@AfterClass
 	public static void finish() {
 		User u = usd.findByUsername("t");
-		
 		usd.delete(u);
+		acd.delete(ac);
+		acd.delete(ac2);
 	}
 }

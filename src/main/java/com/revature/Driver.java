@@ -190,10 +190,11 @@ public class Driver {
 						for(Account ac1: accounts) {
 							System.out.println(ac1);
 						}
-						
+						loggedIn();
 					}else {
 						log.warn("Accounts not found");
 						System.out.println("No Accounts found");
+						loggedIn();
 					}
 				}else {
 					try {
