@@ -506,3 +506,81 @@ java.lang.ArithmeticException: / by zero
 2020-11-10 18:13:50 INFO  AccountDaoImpl:134 - Account found
 2020-11-10 18:13:50 INFO  AccountDaoImpl:57 - Account inserted
 2020-11-10 18:13:50 INFO  Driver:236 - Account created
+2020-11-10 18:48:52 INFO  Driver:22 - Program Start
+2020-11-10 18:49:07 INFO  UserDaoImpl:147 - User inserted
+2020-11-10 18:49:16 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:49:16 INFO  Driver:82 - User logged in
+2020-11-10 18:49:21 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:49:21 INFO  AccountDaoImpl:57 - Account inserted
+2020-11-10 18:49:21 INFO  Driver:236 - Account created
+2020-11-10 18:49:23 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:49:23 INFO  AccountDaoImpl:57 - Account inserted
+2020-11-10 18:49:23 INFO  Driver:236 - Account created
+2020-11-10 18:49:35 INFO  Driver:22 - Program Start
+2020-11-10 18:49:40 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:49:40 INFO  Driver:82 - User logged in
+2020-11-10 18:50:00 ERROR AccountDaoImpl:144 - Account not found
+2020-11-10 18:50:46 INFO  Driver:22 - Program Start
+2020-11-10 18:50:57 INFO  Driver:22 - Program Start
+2020-11-10 18:51:05 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:51:05 INFO  Driver:82 - User logged in
+2020-11-10 18:51:10 INFO  AccountDaoImpl:201 - Accounts found
+2020-11-10 18:51:10 INFO  Driver:189 - Accounts found
+2020-11-10 18:51:18 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:51:27 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:51:27 INFO  AccountDaoImpl:172 - Account updated
+2020-11-10 18:51:32 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:51:39 INFO  Driver:22 - Program Start
+2020-11-10 18:51:42 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:51:42 INFO  Driver:82 - User logged in
+2020-11-10 18:51:48 ERROR AccountDaoImpl:144 - Account not found
+2020-11-10 18:51:52 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:51:55 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:51:55 INFO  AccountDaoImpl:172 - Account updated
+2020-11-10 18:52:11 INFO  Driver:22 - Program Start
+2020-11-10 18:52:17 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:52:17 INFO  Driver:82 - User logged in
+2020-11-10 18:52:21 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:52:21 INFO  AccountDaoImpl:57 - Account inserted
+2020-11-10 18:52:21 INFO  Driver:236 - Account created
+2020-11-10 18:52:27 ERROR AccountDaoImpl:144 - Account not found
+2020-11-10 18:52:27 WARN  Driver:249 - Deposit error
+2020-11-10 18:52:34 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:52:38 WARN  Driver:249 - Deposit error
+2020-11-10 18:53:03 INFO  Driver:22 - Program Start
+2020-11-10 18:53:12 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:53:12 INFO  Driver:82 - User logged in
+2020-11-10 18:53:17 ERROR AccountDaoImpl:144 - Account not found
+2020-11-10 18:53:17 WARN  Driver:249 - Deposit error
+2020-11-10 18:53:31 INFO  Driver:22 - Program Start
+2020-11-10 18:53:39 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:53:39 INFO  Driver:82 - User logged in
+2020-11-10 18:53:44 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:53:51 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-10 18:53:51 INFO  Driver:253 - Deposited
+2020-11-10 18:53:59 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:54:01 ERROR Driver:262 - withdraw error
+2020-11-10 18:54:08 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:54:09 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-10 18:54:09 INFO  Driver:266 - Withdrawn
+2020-11-10 18:54:21 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:54:21 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:54:24 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-10 18:54:24 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-10 18:54:24 INFO  Driver:278 - Transferred
+2020-11-10 18:54:36 INFO  Driver:22 - Program Start
+2020-11-10 18:54:42 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:54:42 INFO  Driver:82 - User logged in
+2020-11-10 18:55:02 INFO  Driver:176 - User found
+2020-11-10 18:55:19 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:55:19 INFO  Driver:211 - Account found
+2020-11-10 18:55:32 INFO  Driver:22 - Program Start
+2020-11-10 18:55:36 INFO  UserDaoImpl:57 - Logged in
+2020-11-10 18:55:36 INFO  Driver:82 - User logged in
+2020-11-10 18:55:42 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:55:49 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:55:50 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:55:50 INFO  AccountDaoImpl:172 - Account updated
+2020-11-10 18:56:16 INFO  AccountDaoImpl:134 - Account found
+2020-11-10 18:56:17 INFO  AccountDaoImpl:307 - Balance Updated
+2020-11-10 18:56:17 INFO  Driver:103 - Deposit Success
